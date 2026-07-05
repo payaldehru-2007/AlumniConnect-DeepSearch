@@ -51,9 +51,8 @@ Server runs on `http://localhost:8000`
 | GET | `/search` | Search alumni profiles by name/company/college |
 | GET | `/profile/{id}` | Get detailed info for a specific profile |
 | GET | `/filter` | Filter results by year, company, location |
-| ... | ... | *(add remaining endpoints here)* |
 
-> Note: Update the table above with your exact endpoint paths — check your `main.py` route definitions.
+
 
 ## 🚧 Deployment Note
 
