@@ -48,11 +48,13 @@ Server runs on `http://localhost:8000`
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/search` | Search alumni profiles by name/company/college |
-| GET | `/profile/{id}` | Get detailed info for a specific profile |
-| GET | `/filter` | Filter results by year, company, location |
-
-
+| GET | `/` | Health check — confirms the service is running |
+| GET | `/health` | Service health check |
+| GET | `/search` | Builds search queries for an alumni (LinkedIn, GitHub, Twitter) |
+| GET | `/discover` | Runs real search via SerpAPI, returns actual profile links |
+| GET | `/alumni` | Fetches all alumni records from the database |
+| GET | `/alumni/filter` | Filters alumni by batch, branch, city, or company |
+| GET | `/alumni/{alumni_id}` | Fetches a single alumni profile by ID |
 
 ## 🚧 Deployment Note
 
